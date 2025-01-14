@@ -2,7 +2,9 @@
   "scripts": {
     "client": "npm start --prefix client",
     "server": "nodemon server/src/server",
-    "dev": "concurrently \"npm run client\" \"npm run server\""
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "frontend": "cd client && npm start",
+    "backend": "cd server && cd src &&  nodemon server.js"
   },
   "devDependencies": {
     "concurrently": "^9.1.2"
